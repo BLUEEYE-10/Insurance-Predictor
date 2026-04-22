@@ -64,7 +64,7 @@ CSV_FILE = 'collected_data.csv'
 @app.route('/')
 def home():
     # Serve the HTML frontend
-    return send_from_directory('.', 'insure.html')
+    return send_from_directory('.', 'index.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():
